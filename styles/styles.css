@@ -1,19 +1,342 @@
 *{
-    margin: 0;
+    margin: 0; 
     padding: 0;
-    border: 0;
+    border: 0; 
     outline: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+    text-decoration: none; 
+    box-sizing: border-box; 
 }
 
-.source{
-    border-radius: 4px;
-    margin: solid 3px;
+
+body{
+    color: rgb(255, 255, 255);
+    background-color:black;
+    max-width: 1032px;
 }
 
-.alt-img{
-    height: 82px;
-    width: 111.08px;
+/*Classe que alinha os elementos em linha*/
+.caixa-sobre-pS{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/**/
+.caixa-img {
+    display: flex; 
+    flex-direction: column;
+    align-items:left;
+}
+
+.distancia{
+    margin-left: 30px;
+    margin-bottom: 350px;
+    Width: 294px;
+    Height: 279px;
+}
+
+.titulo-1{
+    color:#E48C2D;
+    font-family:"Jersey 15", sans-serif;
+    font-size: 82.83px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.titulo-2{
+    color:#E48C2D;
+    font-family:"Jersey 15", sans-serif;
+    font-size: 82.83px;
+    margin-right: 20px;
+}
+
+.titulos-ajuste{
+    color:#E48C2D;
+    font-family:"Jersey 15", sans-serif;
+    font-size: 82.83px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+}
+
+.sub-titulos{
+    color:#E48C2D;
+    font-family:"Jersey 15", sans-serif;
+    font-size: 50px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+
+.botao-voltar{
+    display: flex;
+    justify-content:center; 
+    text-align: center;
+    width: 90px;
+    background-color:#E48C2D ;
+    color: black !important; 
+    border: 1px solid #E48C2D; 
+    border-radius: 5px;
+    padding: 10px ; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+
+.input-d{
+    width: 359px;
+    height: 161px;
+    border-radius: 9px;
+    padding-left: 10px;
+    padding-top: 17.11px;
+    font-size:16px;
+    font-family: "Inter";
+}
+
+
+
+.input-e{
+    width: 359px;
+    height: 68px;
+    border-radius: 9px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+
+button{
+    width: 198px;
+    height: 62px;
+    border-radius: 9px;
+    text-align: center; 
+    font-family: "Inter";
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #FFD700;
+    margin-left: 20%;
+}
+
+/*Efeito parallax imagem 1*/
+
+.background{
+    background: url("/img/pexels-luis-gomes-166706-546819\ 2.png") center 
+    center/cover;
+    height: 594px;
+    width: 1032px;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: color ;
+    color: rgb(37, 25, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Efeito parallax imagem 2*/
+.background-2{
+    background: url("/img/e57077eb4df0ff72c6445076e670ce23.jpeg") center 
+    center/cover;
+    height: 509.41px;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color ;
+    color: rgb(37, 25, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Efeito parallax imagem 3*/
+.background-3{
+    background: url("/img/Rectangle\ 29.png") center 
+    center/cover;
+    background-attachment: fixed;
+    background-blend-mode: color ;
+    color: rgb(37, 25, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1263px;
+    height: 530px;
+}
+
+.div-p{
+    display: flex;
+    flex-direction: column;   
+}
+
+.fonte-texto > p,h4,h3,li{
+    font-family: "Inter";
+    letter-spacing: 2%;
+}
+
+
+.imagem-ajustada-2{
+    width: 519.6px;
+    height: 399.75px;
+    display: flex;
+    align-items: start;
+    margin-left: 20px;
+}
+
+.margem-a{
+    margin-bottom: 200px;
+}
+
+.margem-b{
+    margin-bottom: 300px;
+}
+
+.margem-c{
+    margin-top: 50px;
+}
+
+.margem-d{
+    margin-bottom: 50px;
+}
+
+.margem-lista{
+    margin-left: 20px;
+}
+
+
+.container-form{
+    width: 1170px;
+    height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    padding:45px;
+    margin-bottom: 30px;
+}
+
+.container-direitos{
+    width: 1170px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 20px;
+    font-family:"Jersey 15";
+}
+
+
+/* classes  não feitas por mim*/
+
+.nav > a{
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+.container{
+    width: 1170px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+  
+.ajuste{
+    height: 594px;
+    width: 1032px;
+}
+
+.quadro-preto {
+    background-color: black;
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+  
+.imagem-ajustada {
+    max-width: 100%; 
+    max-height: 80px;
+}
+  
+  
+.nav{
+      display: flex;
+      gap: 16px;
+      align-items: center;
+}
+  
+.links{
+      color: #D9DADC !important;
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      width: 298px;
+      height: 65px;
+      border-radius: 16px;
+      top: 589px;
+      left: 581px;
+      border-radius: 5px;
+      letter-spacing: 2px;
+      padding: 20px,10px,20px,10px;
+      gap: 10px;
+      font-size: 20px;
+}
+  
+.bg-footer{
+      margin-top: 40px;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+}
+  
+.container-footer{
+      width: 1170px;
+      padding: 20px;
+      display: flex;
+}
+  
+.container-footer .logo{
+      margin-right: 48px;
+}
+  
+.container-footer > ul{
+      min-width: 142px;
+      padding: 20px;
+      height: 455px;
+      align-items: baseline;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+}
+
+
+.campo-pesquisa {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px 1 1 10px;
+    cursor: pointer;
+}
+
+img {
+    background-color: black;
+}
+
+.cut {
+    color: black !important;
+    background-color: #EBC52B;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+
+}
+
+.nav2 {
+    float: right;
 }
